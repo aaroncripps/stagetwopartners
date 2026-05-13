@@ -480,10 +480,8 @@
       padding: clamp(80px, 12vw, 140px) 0;
     }
     .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: clamp(48px, 8vw, 100px);
-      align-items: start;
+      display: block;
+      max-width: 680px;
     }
     .contact-h2 {
       font-family: var(--serif);
@@ -501,7 +499,6 @@
       color: var(--muted);
       line-height: 1.8;
       margin-bottom: 32px;
-      max-width: 380px;
     }
     .contact-email-link {
       display: inline-flex;
@@ -792,12 +789,12 @@
       <h2 class="s-headline reveal reveal-delay-1">Selected engagements</h2>
       <div class="work-grid">
         <div class="work-card reveal">
-          <h3 class="work-title">Built Product from scratch to IPO</h3>
-          <p class="work-desc">Joined Forge at their Series A as their first VP of Product. Built the PM practice from scratch — hired and mentored 7 PMs, scaled a manual trading marketplace into a comprehensive private securities platform. Forge went public and was later acquired by Charles Schwab.</p>
-        </div>
-        <div class="work-card reveal reveal-delay-1">
           <h3 class="work-title">Quantitative Rigor. Product Excellence.</h3>
           <p class="work-desc">Fractional product leader for Venn, Two Sigma's portfolio analytics platform. Brought PM structure, roadmap discipline, and delivery predictability to a complex financial product inside one of the world's leading quantitative firms. Venn was acquired by Insight Partners in 2026.</p>
+        </div>
+        <div class="work-card reveal reveal-delay-1">
+          <h3 class="work-title">Built Product from scratch to IPO</h3>
+          <p class="work-desc">Joined Forge at their Series A as their first VP of Product. Built the PM practice from scratch — hired and mentored 7 PMs, scaled a manual trading marketplace into a comprehensive private securities platform. Forge went public and was later acquired by Charles Schwab.</p>
         </div>
         <div class="work-card reveal reveal-delay-2">
           <h3 class="work-title">Local practices scaled to global products.</h3>
