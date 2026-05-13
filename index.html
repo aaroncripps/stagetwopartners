@@ -10,6 +10,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stagetwopartners.io">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
       --bg:        #F6F5F0;
       --white:     #FFFFFF;
       --dark:      #141414;
-      --accent:    #2952E3;
+      --accent:    #FF7800;
       --muted:     #74736E;
       --border:    #E3E1D8;
       --dark-bg:   #111111;
@@ -783,43 +785,11 @@
         <div class="contact-left reveal">
           <h2 class="contact-h2">Let's<br><em>talk.</em></h2>
           <p class="contact-sub">Whether you're a seed-stage founder who needs someone to hold the product function while you sprint toward your A, or a Series&nbsp;A CEO whose team can't fully execute without you — reach out. First conversation is always free.</p>
-          <a href="mailto:inquiries@stagetwopartners.io" class="contact-email-link">
-            inquiries@stagetwopartners.io
+          <a href="mailto:aaron@stagetwopartners.io" class="contact-email-link">
+            aaron@stagetwopartners.io
           </a>
         </div>
 
-        <div class="contact-right reveal reveal-delay-1">
-          <div class="form-message" id="formSuccess">
-            ✓ &nbsp;Message sent — we'll be in touch soon.
-          </div>
-          <div class="form-message" id="formError">
-            Something went wrong. Please email us directly at inquiries@stagetwopartners.io
-          </div>
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name" placeholder="Jane Smith" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email" placeholder="jane@company.com" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="company">Company &amp; stage</label>
-              <input type="text" id="company" name="company" placeholder="Acme Inc. — Seed / Series A / Series B">
-            </div>
-            <div class="form-group">
-              <label for="message">What are you working on?</label>
-              <textarea id="message" name="message" placeholder="Tell us about your current challenge, what you're trying to build, or just say hello…" required></textarea>
-            </div>
-            <div class="form-footer">
-              <p class="form-privacy">We'll never share your info with anyone.</p>
-              <button type="submit" class="btn btn-dark">Send message →</button>
-            </div>
-          </form>
-        </div>
 
       </div>
     </div>
@@ -833,7 +803,7 @@
     <div class="footer-inner">
       <a href="#" class="footer-logo">Stage Two Partners</a>
       <span class="footer-copy">© <span id="year"></span> Stage Two Partners</span>
-      <a href="mailto:inquiries@stagetwopartners.io" class="footer-email">inquiries@stagetwopartners.io</a>
+      <a href="mailto:aaron@stagetwopartners.io" class="footer-email">aaron@stagetwopartners.io</a>
     </div>
   </footer>
 
@@ -912,7 +882,7 @@
         const company = form.company.value;
         const message = form.message.value;
         const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\n${message}`);
-        window.location.href = `mailto:inquiries@stagetwopartners.io?subject=Stage Two Partners Inquiry&body=${body}`;
+        window.location.href = `mailto:aaron@stagetwopartners.io?subject=Stage Two Partners Inquiry&body=${body}`;
         submitBtn.textContent = 'Send message →';
         submitBtn.disabled = false;
         return;
